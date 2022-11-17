@@ -210,6 +210,13 @@ blockquote {
   padding: 10px;
 }
 
+._50block {
+  width: 50%;
+  height: 300px;
+  padding: 5px;
+  float: left;
+}
+
 ._60block {
   width: 60%;
   height: 300px;
