@@ -146,6 +146,15 @@
          </div>
       </div>
    </div>
+   <div class="custom-fab-container">
+      <button class="custom-fab" id="custom-fab-icon" onclick="toggleMenu()">
+         <i class="fa fa-bars"></i>
+      </button>
+   </div>
+   <div class="custom-fab-menu" id="fab-menu">
+      <h4><a href="https://www.soulup.in/products/arundhati-1" data-ix="hero-text">SoulUp</a></h4>
+      <h4><a href="https://www.fiverr.com/gupta_arundhati" data-ix="hero-text">Fiverr</a></h4>
+   </div>
    <div class="footer-section">
       <div class="w-container">
          <div class="w-row">
@@ -170,6 +179,21 @@
    </div>
    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
    <script src="assets/js/webflow.7749a0b81.js" type="text/javascript"></script>
-   
+   <script>
+      var isIconToggled = false;
+      function toggleMenu() {
+         var fabIcon = document.getElementById('custom-fab-icon')
+         var menu = document.getElementById('fab-menu');
+         isIconToggled = !isIconToggled;
+         if (isIconToggled) {
+            fabIcon.innerHTML = '<i class="fas fa-times close-icon"></i>';
+            fabIcon.style.backgroundColor = "#82bcfa";
+         } else {
+            fabIcon.innerHTML = '<i class="fa fa-bars"></i>';
+            fabIcon.style.backgroundColor = "#007bff";
+         }
+          menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+      }
+  </script>
 </body>
 </html>

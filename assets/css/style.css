@@ -1143,3 +1143,45 @@ html.w-mod-js *[data-ix="hero-text"] {
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+
+.custom-fab-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-fab {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.custom-fab-menu {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for menu items */
+.custom-fab-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
